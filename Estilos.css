@@ -1,39 +1,246 @@
-body{
-    background-image: url(./Img/Carne\ imagen.png);
-    
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-padding-top: 2rem;
+text-decoration: none;
+list-style: none;
+scroll-behavior: smooth;
+font-family: "Poppins", sans-serif;
+font-size: 15px;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: uppercase;
 
 }
 
-nav{
+
+section{
+    padding: 50px 10%;
+}
+
+*::selection{
+    color: #fff;
+    background: black;
+
+}
+
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0px;
+    z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding-top: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
-    font-weight: bold;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 4px 41px rgb(14 55 54 / 15%);
+    padding: 10px 10%;
+    transition: 0.2s;
+
 }
 
-h1{
+#icono{
+    font-size: 20px;
+
+}
+
+.logo img{
+    width: 200px;
+    transition: transform 0.2s;
+}
+
+
+.logo img:hover{
+    transform: scale(1.3);
+}
+
+.logo{
+display: flex;
+align-items: center;
+}
+
+.barra{
+    display: flex;
+    
+    
+  
+
+}
+
+.barra a{
+    font-size: 1rem;
+    padding: 11px 20px;
     color: black;
-    font-size: 45px;
+
 }
 
-ul li{
-    display: inline-block;
-    padding: 0px 20px;
+.barra a:hover{
+color: #990033;
 }
 
-a{
+#menuicono{
+font-size: 24px;
+cursor: pointer;
+z-index: 1001; 
+display: none;
+}
+
+.inicio{
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   background:#b9426b; 
+   gap: 1rem;
+}
+
+.inicio-text{
+    flex: 1 1 17rem;
+}
+
+.img-inicio{
+    flex: 1 1 17rem;
+}
+
+.bnv{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size:  19px;
     color: black;
-    text-decoration: none;
+
 }
 
-a:hover{
-    color: lightgray;
+.bnv2{
+    
+    padding: 7px 16px;
+    border: 2px solid black;
+    border-radius: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size:  19px;
+    color: black;
+   transition: all .38s ease;
+    
+    
+  
+    
+    
+
 }
 
-.imagen{
-    width: 850;
+.burtext{
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+     font-size: 60px;
+     color: #4f0303;
+    
+     
+
+}
+
+.burtext2{
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+     font-size: 25px;
+     margin: 0.5rem 0 1.4rem;
+     color: black;
+     
+}
+
+.img-inicio{
+   animation: animate 3s linear infinite; 
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(-11px, 0);
+    } 
+
+    50%{
+        transform: translate(-0px, -11px);
+    } 
+
+    100%{
+        transform: translate(-11px, 0);
+    } 
+    
+    
+}
+
+.bnv2:hover{
+  color: #fff;
+  background-color: #150f11;
+  letter-spacing: 1px;
+}
+
+#function{
+    font-size: 40px;
+    display: flex;
+    color: black;
+    align-items: center;
+    display: flex;
+    transition: transform 0.2s;
+    margin-right: 7px;
+    
+}
+
+#function2{
+    font-size: 40px;
+    display: flex;
+    color: black;
+    align-items: center;
+    display: flex;
+    transition: transform 0.2s;
+    
+}
+
+.iconos{
+  display: flex;
+  align-items: center;
+  padding: 5px 23px;
+  background-color: #b9426b; 
+  border-radius: 5rem;
+  
+  
+}
+
+#function:hover{
+    color: #fff;
+  transform: scale(1.3);
+}
+
+#function2:hover{
+    color: #fff;
+  transform: scale(1.3);
+}
+
+
+#dis{
+    font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+#mtext{
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.6rem;
+    color: #4f0303;
+}
+
+.cabezera{
+    text-align: center;
+    text-transform: uppercase;
+    
 }
